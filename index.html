@@ -1,72 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Apps que sí pagan</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apps que pagan dinero 2025</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f0f4f8;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
     }
     header {
-      background: #0f172a;
+      background-color: #4f46e5;
       color: white;
-      text-align: center;
       padding: 1rem;
+      text-align: center;
     }
-    .contenido {
-      max-width: 800px;
+    .container {
+      max-width: 900px;
       margin: auto;
       padding: 2rem;
     }
     .app {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
       padding: 1rem;
-      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-    .app h2 {
-      color: #0ea5e9;
+    .app img {
+      max-width: 150px;
+      border-radius: 10px;
+      margin-bottom: 1rem;
     }
-    .boton {
-      display: inline-block;
-      margin-top: 0.5rem;
-      background: #10b981;
+    h2 {
+      color: #4f46e5;
+    }
+    a {
       color: white;
-      padding: 0.5rem 1rem;
+      background-color: #4f46e5;
+      padding: 10px 20px;
+      border-radius: 5px;
       text-decoration: none;
-      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    a:hover {
+      background-color: #3730a3;
+    }
+    @media (min-width: 700px) {
+      .app {
+        flex-direction: row;
+        text-align: left;
+      }
+      .app img {
+        margin-right: 2rem;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Apps que SÍ pagan dinero en 2025</h1>
+    <p>Descubre apps que te pagan caminando, jugando o haciendo encuestas.</p>
+  </header>
 
-<header>
-  <h1>💸 Apps que sí pagan en 2025 💸</h1>
-</header>
+  <div class="container">
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/2gmQbtDUap1JzqOCnMNl8J8GyMC3-4Ae5nGhDZxLVttVmRpgMXA-jY4D1c4PvNPSzXY=w240-h480-rw" alt="Sweatcoin" />
+      <div>
+        <h2>Sweatcoin</h2>
+        <p>Gana dinero solo por caminar. Por cada paso acumulas puntos que puedes canjear por premios o efectivo.</p>
+        <a href="https://play.google.com/store/apps/details?id=in.sweatcoin.app" target="_blank">Descargar Sweatcoin</a>
+      </div>
+    </div>
 
-<div class="contenido">
-  <div class="app">
-    <h2>🏃 Sweatcoin</h2>
-    <p>Ganas dinero por caminar. ¡Es real!</p>
-    <a class="boton" href="#">Descargar Sweatcoin</a>
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/gmPbwWoUO0oWW43rIefDBnWHTkQXv-ZJ5Nk8H7b8_OHiVET5kKz0w2BgJBrg6lHlHQ=w240-h480-rw" alt="Mistplay" />
+      <div>
+        <h2>Mistplay</h2>
+        <p>Gana puntos por jugar a juegos nuevos en tu móvil Android. Canjea los puntos por tarjetas regalo.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.mistplay.mistplay" target="_blank">Descargar Mistplay</a>
+      </div>
+    </div>
+
+    <div class="app">
+      <img src="https://play-lh.googleusercontent.com/tM8Id2uPeK-MER8LhCDHhflYHn8Hz1XZmnCeItTJqPaYoY4sBlfSmDFuVK1Tbn2QzQ=w240-h480-rw" alt="AttaPoll" />
+      <div>
+        <h2>AttaPoll</h2>
+        <p>Recibe dinero por responder encuestas cortas. Retira el dinero a tu cuenta PayPal fácilmente.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.attapoll.attapoll" target="_blank">Descargar AttaPoll</a>
+      </div>
+    </div>
   </div>
-
-  <div class="app">
-    <h2>🎮 Mistplay</h2>
-    <p>Te pagan por jugar a juegos en Android.</p>
-    <a class="boton" href="#">Descargar Mistplay</a>
-  </div>
-
-  <div class="app">
-    <h2>📋 AttaPoll</h2>
-    <p>Responde encuestas y cobra en PayPal.</p>
-    <a class="boton" href="#">Descargar AttaPoll</a>
-  </div>
-</div>
-
 </body>
 </html>
